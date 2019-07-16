@@ -2,6 +2,6 @@
 ## Works for flats located in Prague
 
 Technologies:
- - Python (scikit-learn, pandas, matplotlib)
- - NodeJS (Backend)
- - VueJS (Frontend)
+ - Python *(scikit-learn, pandas, matplotlib)*
+ - NodeJS / Java (?) *(Backend)*
+ - VueJS *(Frontend)*
