@@ -1,5 +1,3 @@
-# cenabytu
-
 ## Project setup
 ```
 npm install
