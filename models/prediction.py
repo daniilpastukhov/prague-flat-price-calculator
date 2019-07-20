@@ -2,9 +2,13 @@ import pandas as pd
 import numpy as np
 import pickle
 
+from sklearn import ensemble
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.preprocessing import StandardScaler
+from sklearn import preprocessing
+from sklearn.svm import SVR
+import sklearn.metrics as metrics
+import matplotlib.pyplot as plt
 
 flat_types = {
     'flatshare': 11,
@@ -37,45 +41,57 @@ regions = {
     'Praha 11': 11
 }
 
-info = pd.read_csv('flats_info.csv')
+info = pd.read_csv('../data/flats_info.csv')
 info = info.drop('id', 1)
 col_names = list(info.columns)
-info = info.fillna(info.mean())  # Fill NaN's with column's mean value
+info = info.dropna()
 
 p = info['price'] < 100000
 info = info[p]  # Get information only about flats with price < 100'000
-info['price'] = info['price'].round(decimals=3)  # Round prices to 3 decimals places
 m = len(info)  # Number of examples
+
+scaler = preprocessing.StandardScaler().fit(info)
+info = scaler.transform(info)
+info = pd.DataFrame(info, columns=col_names)
 
 X = info[['type', 'size', 'locality']].values
 y = info['price'].values
 
-scaler_X = StandardScaler().fit(X)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=20)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+rs = 1
+ests = [linear_model.LinearRegression(), linear_model.Ridge(),
+        linear_model.Lasso(), linear_model.ElasticNet(),
+        linear_model.BayesianRidge(), linear_model.OrthogonalMatchingPursuit(),
+        linear_model.SGDRegressor(), SVR(kernel='rbf')]
 
-scalerX = StandardScaler().fit(X_train)
-scalery = StandardScaler().fit(y_train)
-X_train = scalerX.transform(X_train)
-y_train = scalery.transform(y_train)
-X_test = scalerX.transform(X_test)
-y_test = scalery.transform(y_test)
+ests_labels = np.array(['Linear', 'Ridge', 'Lasso', 'ElasticNet', 'BayesRidge', 'OMP', 'SGD', 'SVR'])
+errvals = np.array([])
 
-model = linear_model.SGDRegressor(max_iter=1000, tol=1e-3, eta0=0.0001, random_state=42)
+for e in ests:
+    e.fit(X_train, y_train)
+    this_err = metrics.median_absolute_error(y_test, e.predict(X_test))
+    print("got error %0.2f" % this_err)
+    errvals = np.append(errvals, this_err)
+
+pos = np.arange(errvals.shape[0])
+srt = np.argsort(errvals)
+plt.figure(figsize=(7, 5))
+plt.bar(pos, errvals[srt], align='center')
+plt.xticks(pos, ests_labels[srt])
+plt.xlabel('Estimator')
+plt.ylabel('Median Absolute Error')
+plt.show()
+
+model = SVR()
 model.fit(X_train, y_train)
 
 scores = cross_val_score(model, X_test, y_test, cv=3)
 
-# print(info.describe())
-
 print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
-data_to_predict = pd.DataFrame([[2, 80, 6]])
-data_to_predict2 = scaler_X.transform(data_to_predict)
-
-print(data_to_predict2)
-
-print(model.predict(data_to_predict2))
+# data_to_predict = scaler.inverse_transform(np.array([2, 80, 6]))
+# print(model.predict(data_to_predict))
 
 # print(round(get_price('2+kt', 59, 'Praha 2')))
 # print(round(get_price('unusual', 160, 'Praha 9')))
