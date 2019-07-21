@@ -1,14 +1,9 @@
 import pandas as pd
 import numpy as np
-import pickle
-
-from sklearn import ensemble
-from sklearn import linear_model
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn import preprocessing
 from sklearn.svm import SVR
-import sklearn.metrics as metrics
-import matplotlib.pyplot as plt
+from joblib import dump
 
 flat_types = {
     'flatshare': 11,
@@ -41,6 +36,12 @@ regions = {
     'Praha 11': 11
 }
 
+
+def get_price(m, scaler, flat_type, flat_size, flat_locality):
+    flat_data = scaler_X.transform(np.array([[flat_types[flat_type], flat_size, regions[flat_locality]]]))
+    return m.predict(flat_data)
+
+
 info = pd.read_csv('../data/flats_info.csv')
 info = info.drop('id', 1)
 col_names = list(info.columns)
@@ -50,51 +51,31 @@ p = info['price'] < 100000
 info = info[p]  # Get information only about flats with price < 100'000
 m = len(info)  # Number of examples
 
-scaler = preprocessing.StandardScaler().fit(info)
-info = scaler.transform(info)
-info = pd.DataFrame(info, columns=col_names)
-
 X = info[['type', 'size', 'locality']].values
 y = info['price'].values
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=20)
 
-rs = 1
-ests = [linear_model.LinearRegression(), linear_model.Ridge(),
-        linear_model.Lasso(), linear_model.ElasticNet(),
-        linear_model.BayesianRidge(), linear_model.OrthogonalMatchingPursuit(),
-        linear_model.SGDRegressor(), SVR(kernel='rbf')]
+scaler_X = preprocessing.StandardScaler().fit(X_train)
+scaler_Y = preprocessing.StandardScaler().fit(y_train.reshape(-1, 1))
+X_train = scaler_X.transform(X_train)
+y_train = scaler_Y.transform(y_train.reshape(-1, 1))
+y_train = y_train.reshape(-1)
+X_test = scaler_X.transform(X_test)
+y_test = scaler_Y.transform(y_test.reshape(-1, 1))
+y_test = y_test.reshape(-1)
 
-ests_labels = np.array(['Linear', 'Ridge', 'Lasso', 'ElasticNet', 'BayesRidge', 'OMP', 'SGD', 'SVR'])
-errvals = np.array([])
-
-for e in ests:
-    e.fit(X_train, y_train)
-    this_err = metrics.median_absolute_error(y_test, e.predict(X_test))
-    print("got error %0.2f" % this_err)
-    errvals = np.append(errvals, this_err)
-
-pos = np.arange(errvals.shape[0])
-srt = np.argsort(errvals)
-plt.figure(figsize=(7, 5))
-plt.bar(pos, errvals[srt], align='center')
-plt.xticks(pos, ests_labels[srt])
-plt.xlabel('Estimator')
-plt.ylabel('Median Absolute Error')
-plt.show()
-
-model = SVR()
+model = SVR(kernel='rbf', epsilon=0.01, gamma='auto')
 model.fit(X_train, y_train)
 
 scores = cross_val_score(model, X_test, y_test, cv=3)
 
 print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
-# data_to_predict = scaler.inverse_transform(np.array([2, 80, 6]))
-# print(model.predict(data_to_predict))
+dump(model, 'price-predictor.joblib')
 
-# print(round(get_price('2+kt', 59, 'Praha 2')))
-# print(round(get_price('unusual', 160, 'Praha 9')))
-# print(round(get_price('1+kt', 25, 'Praha 1')))
-# print(round(get_price('3+1', 87, 'Praha 5')))
-# print(round(get_price('flatshare', 23, 'Praha 6')))
+# print(scaler_Y.inverse_transform(get_price(model, scaler_X, '2+kt', 59, 'Praha 2')))
+# print(scaler_Y.inverse_transform(get_price(model, scaler_X, 'unusual', 160, 'Praha 9')))
+# print(scaler_Y.inverse_transform(get_price(model, scaler_X, '1+kt', 25, 'Praha 1')))
+# print(scaler_Y.inverse_transform(get_price(model, scaler_X, '3+1', 87, 'Praha 5')))
+# print(scaler_Y.inverse_transform(get_price(model, scaler_X, 'flatshare', 23, 'Praha 6')))
