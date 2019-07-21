@@ -36,7 +36,7 @@ estimator_values = np.array([])
 for e in estimators:
     e.fit(X_train, y_train)
     this_err = metrics.median_absolute_error(y_test, e.predict(X_test))
-    print("got error %0.2f" % this_err)
+    print("Got error %0.2f" % this_err)
     estimator_values = np.append(estimator_values, this_err)
 
 pos = np.arange(estimator_values.shape[0])
