@@ -3,5 +3,5 @@
 
 Technologies:
  - Python *(scikit-learn, pandas, matplotlib)*
- - NodeJS / Java (?) *(Backend)*
+ - Python's Flask (NodeJS / Java?) *(Backend)*
  - VueJS *(Frontend)*
