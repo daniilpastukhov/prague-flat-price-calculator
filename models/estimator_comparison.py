@@ -1,8 +1,5 @@
 import pandas as pd
 import numpy as np
-import pickle
-
-from sklearn import ensemble
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn import preprocessing
