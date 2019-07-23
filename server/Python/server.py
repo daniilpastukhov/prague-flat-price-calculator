@@ -1,44 +1,13 @@
 import joblib
-import numpy as np
 import pandas as pd
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 
-flat_types = {
-    'flatshare': 11,
-    '1+kt': 1,
-    '1+1': 2,
-    '2+kt': 3,
-    '2+1': 4,
-    '3+kt': 5,
-    '3+1': 6,
-    '4+kt': 7,
-    '4+1': 8,
-    '5+kt': 9,
-    '5+1': 10,
-    'unusual': 12,
-    'Unknown': None
-}
-
-regions = {
-    'Praha': 0,
-    'Praha 1': 1,
-    'Praha 2': 2,
-    'Praha 3': 3,
-    'Praha 4': 4,
-    'Praha 5': 5,
-    'Praha 6': 6,
-    'Praha 7': 7,
-    'Praha 8': 8,
-    'Praha 9': 9,
-    'Praha 10': 10,
-    'Praha 11': 11
-}
-
 
 def get_price(m, scaler, flat_type, flat_size, flat_locality):
-    flat_data = scaler.transform(np.array([[flat_types[flat_type], flat_size, regions[flat_locality]]]))
+    flat_data = scaler.transform(pd.DataFrame([[flat_type, flat_size, flat_locality]]))
     return m.predict(flat_data)
 
 
@@ -61,14 +30,19 @@ scaler_X = preprocessing.StandardScaler().fit(X_train)
 scaler_Y = preprocessing.StandardScaler().fit(y_train.reshape(-1, 1))
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST', 'GET'])
+@cross_origin()
 def predict():
     data = request.get_json(force=True)
-    prediction = get_price(model, scaler_X, data['type'], data['size'], data['locality'])
-    return jsonify(prediction)
+    print(data)
+    prediction = get_price(model, scaler_X, data.get('type', False), data.get('size', False), data.get('locality', False))
+    response = jsonify((scaler_Y.inverse_transform(prediction))[0])
+    return response
 
 
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run(port=5000)
