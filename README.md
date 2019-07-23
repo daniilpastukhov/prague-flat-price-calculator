@@ -2,6 +2,6 @@
 ## Works for flats located in Prague
 
 Technologies:
- - Python *(scikit-learn, pandas, matplotlib)*
- - Python's Flask (NodeJS / Java?) *(Backend)*
+ - Python *(scikit-learn)*
+ - Python's Flask *(Backend)*
  - VueJS *(Frontend)*
