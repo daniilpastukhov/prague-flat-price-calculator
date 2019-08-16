@@ -9,12 +9,12 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: './',
+      path: '/',
       name: 'calculator',
       component: Calculator
     },
     {
-      path: './statistics',
+      path: '/statistics',
       name: 'statistics',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
