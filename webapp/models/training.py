@@ -34,4 +34,4 @@ scores = cross_val_score(model, X_test, y_test, cv=3)
 
 print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
-dump(model, 'price-predictor.joblib')  # Save model
+dump(model, 'price-predictor.joblib', protocol=2)  # Save model

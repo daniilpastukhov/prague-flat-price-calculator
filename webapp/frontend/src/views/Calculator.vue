@@ -22,7 +22,7 @@
             </option>
         </select>
 
-        <button class="submit-button" type="submit" @click="getPrice()">Get price</button>
+        <button class="submit-button" type="button" @click="getPrice()">Get price</button>
 
         <div class="result">
             <h3 v-if="prediction != 0">Approximate price: {{ prediction }}</h3>
@@ -80,7 +80,7 @@
         },
         methods: {
             getPrice() {
-                const api_link = 'http://localhost:5000/predict'
+                const api_link = '/predict'
 
                 axios.post(api_link, {
                     type: this.type,

@@ -1,3 +1,4 @@
+import os
 import joblib
 import pandas as pd
 from flask import Flask, request, jsonify, render_template
@@ -29,12 +30,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 scaler_X = preprocessing.StandardScaler().fit(X_train)
 scaler_Y = preprocessing.StandardScaler().fit(y_train.reshape(-1, 1))
 
-app = Flask(__name__, template_folder='./frontend/dist/')
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+application = Flask(__name__, template_folder='./frontend/dist/', static_folder='./frontend/dist/static')
+cors = CORS(application)
+application.config['CORS_HEADERS'] = 'Content-Type'
 
 
-@app.route('/predict', methods=['POST', 'GET'])
+@application.route('/predict', methods=['POST', 'GET'])
 @cross_origin()
 def predict():
     data = request.get_json(force=True)
@@ -45,11 +46,11 @@ def predict():
     return response
 
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
+@application.route('/', defaults={'path': ''})
+@application.route('/<path:path>')
 def catch_all(path):
     return render_template("index.html")
 
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=5000)
+    application.run(host='0.0.0.0', port=os.environ.get('PORT', 5000))
