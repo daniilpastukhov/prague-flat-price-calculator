@@ -5,3 +5,4 @@ Technologies:
  - Python *(scikit-learn)*
  - Python's Flask *(Backend)*
  - VueJS *(Frontend)*
+ - Docker
