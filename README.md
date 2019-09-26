@@ -6,3 +6,7 @@ Technologies:
  - Python's Flask *(Backend)*
  - VueJS *(Frontend)*
  - Selenium *(scrapper)*
+
+Run:
+ - `pip install -r webapp/requirements.txt`
+ - `python3 webapp/run.py`
