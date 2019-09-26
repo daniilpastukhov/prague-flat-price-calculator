@@ -1,0 +1,532 @@
+type,size,locality,price
+1+kt,28,Brno - Zábrdovice,9990
+2+1,81,Brno - Veveří,16000
+4+kt,104,Brno - Zábrdovice,20000
+2+kt,64,Brno - Zábrdovice,16200
+1+kt,41,Brno - Štýřice,10990
+2+kt,69,Brno,12000
+3+kt,76,Brno - Lesná,18000
+3+kt,90,Brno - Staré Brno,21000
+2+kt,69,Brno - Brno-město,21000
+2+kt,56,Brno - Královo Pole,23000
+2+kt,47,Brno - Ivanovice,15000
+1+kt,34,Brno - Židenice,9800
+2+kt,51,Brno - Štýřice,9500
+4+1,174,Brno - Brno-město,26500
+2+kt,70,Brno - Pisárky,14000
+2+kt,49,Brno - Brno-střed,18500
+2+kt,58,Brno,13500
+1+kt,33,Brno - Líšeň,11000
+2+1,60,Brno - Komín,16000
+2+kt,65,Brno,15000
+2+kt,44,Brno - Židenice,10900
+1+kt,28,Brno - Zábrdovice,9990
+2+1,78,Brno - Staré Brno,16500
+1+kt,55,Brno,13900
+3+1,76,Brno - Bohunice,15000
+2+kt,65,Brno - Veveří,15000
+1+kt,28,Brno,8500
+1+1,45,Brno - Veveří,8500
+2+kt,45,Brno - Veveří,8500
+2+kt,50,Brno - Štýřice,4650
+3+kt,58,Brno,12000
+2+kt,55,Brno,12000
+2+1,50,Brno - Staré Brno,15000
+1+1,41,Brno - Bystrc,10000
+1+kt,28,Brno - Řečkovice,8000
+2+1,62,Brno - Židenice,12000
+3+kt,74,Brno - Staré Brno,18500
+1+kt,35,Brno - Černovice,9000
+2+kt,65,Brno - Líšeň,13000
+2+kt,45,Brno,12500
+1+kt,32,Brno - Žabovřesky,10700
+2+1,82,Brno - Brno-město,17000
+1+kt,28,Brno - Zábrdovice,9990
+1+1,42,Brno - Černá Pole,11500
+1+1,34,Brno - Bystrc,9000
+1+kt,38,Brno - Bystrc,9500
+2+kt,58,Brno - Nový Lískovec,11000
+3+kt,79,Brno - Zábrdovice,17500
+3+kt,81,Brno - Medlánky,16000
+1+kt,30,Brno,10500
+1+kt,25,Brno - Židenice,8000
+2+kt,32,Brno - Královo Pole,13500
+2+kt,47,Brno,14000
+3+kt,60,Brno - Židenice,13000
+2+kt,58,Brno,16500
+2+kt,42,Brno - Zábrdovice,11990
+1+1,40,Brno - Bystrc,10500
+3+1,82,Brno - Maloměřice,14000
+2+kt,54,Brno - Trnitá,15000
+2+1,57,Brno,14000
+3+kt,81,Brno - Brno-Slatina,20500
+2+kt,42,Brno,10000
+2+kt,85,Brno,20000
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,70,Brno - Pisárky,14000
+flatshare,30,Brno - Komín,4000
+3+1,113,Brno,28000
+3+kt,101,Brno - Černovice,17000
+2+kt,69,Brno,11000
+3+kt,88,Brno,19000
+3+kt,74,Brno,18500
+2+kt,45,Brno - Lesná,13000
+2+kt,45,Brno,12000
+1+kt,25,Brno - Veveří,7500
+2+1,76,Brno - Veveří,13000
+1+1,40,Brno - Bystrc,10000
+2+kt,45,Brno - Staré Brno,12500
+4+1,89,Brno - Řečkovice,15000
+2+kt,104,Brno,15000
+1+kt,34,Brno,9800
+2+kt,50,Brno - Komárov,14500
+1+kt,52,Brno - Černá Pole,11500
+2+kt,60,Brno - Trnitá,16000
+1+kt,37,Brno - Bystrc,12500
+1+kt,28,Brno - Zábrdovice,9990
+1+kt,30,Brno - Žabovřesky,9500
+1+kt,40,Brno - Brno-město,14000
+2+kt,61,Brno,16000
+3+kt,80,Brno - Ponava,22000
+2+kt,87,Brno - Lesná,15500
+2+1,85,Brno - Královo Pole,18000
+2+1,50,Brno - Veveří,10000
+2+kt,57,Brno - Královo Pole,17000
+1+kt,35,Brno,8000
+1+kt,35,Brno - Zábrdovice,11150
+2+kt,53,Brno - Židenice,13200
+1+kt,23,Brno - Lesná,8000
+3+kt,59,Brno - Zábrdovice,16000
+1+1,38,Brno - Zábrdovice,11000
+1+1,33,Brno,10000
+1+1,32,Brno - Jundrov,9990
+1+kt,33,Brno - Líšeň,11500
+2+kt,35,Brno - Královo Pole,10000
+2+kt,47,Brno,12000
+1+kt,21,Brno - Zábrdovice,8400
+1+kt,28,Brno - Zábrdovice,9990
+1+1,45,Brno - Královo Pole,10000
+1+kt,52,Brno,14500
+2+kt,55,Brno,13000
+1+1,25,Brno - Zábrdovice,9000
+2+kt,45,Brno - Štýřice,13000
+2+1,38,Brno - Zábrdovice,11000
+3+kt,91,Brno,23000
+1+1,39,Brno - Zábrdovice,10000
+2+kt,50,Brno - Brno-město,15000
+3+1,60,Brno - Židenice,15000
+2+1,66,Brno - Staré Brno,13000
+3+kt,72,Brno - Staré Brno,
+2+1,67,Brno - Židenice,14000
+1+kt,40,Brno,13000
+3+kt,68,Brno - Husovice,13000
+1+kt,27,Brno - Zábrdovice,10000
+3+kt,68,Brno - Husovice,11990
+1+kt,37,Brno - Ivanovice,7000
+3+kt,70,Brno - Židenice,15990
+2+kt,38,Brno - Trnitá,15000
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,58,Brno - Medlánky,13000
+1+kt,33,Brno - Bohunice,9500
+2+kt,70,Brno,13500
+1+1,41,Brno - Královo Pole,6900
+2+1,57,Brno - Ponava,13500
+2+1,57,Brno,12900
+2+kt,52,Brno,14000
+2+1,60,Brno - Trnitá,12500
+1+kt,26,Brno,7000
+2+1,55,Brno - Řečkovice,13500
+2+kt,50,Brno - Královo Pole,13000
+2+kt,60,Brno - Staré Brno,17900
+1+kt,37,Brno - Královo Pole,14500
+2+1,64,Brno - Brno-město,14000
+1+kt,27,Brno - Veveří,10990
+2+kt,75,Brno - Obřany,11990
+1+kt,37,Brno - Královo Pole,10990
+1+kt,28,Brno - Zábrdovice,9990
+3+kt,110,Brno - Královo Pole,15000
+1+kt,40,Brno,11500
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,50,Brno - Trnitá,13900
+2+kt,48,Brno - Kohoutovice,15000
+2+1,61,Brno - Jundrov,14000
+1+kt,28,Brno - Zábrdovice,11000
+2+1,60,Brno - Černá Pole,12000
+2+kt,54,Brno,10500
+3+kt,85,Brno - Pisárky,23000
+2+kt,52,Brno,18000
+4+kt,110,Brno - Komárov,26000
+2+1,45,Brno - Medlánky,13000
+1+kt,33,Brno - Trnitá,12000
+4+kt,115,Brno - Komín,19500
+1+kt,23,Brno - Líšeň,5500
+2+kt,70,Brno - Kohoutovice,14000
+1+kt,36,Brno - Brno-střed,11000
+2+kt,50,Brno - Brno-střed,12990
+3+1,131,Brno - Černá Pole,19600
+3+kt,96,Brno,20000
+3+kt,90,Brno - Brno-město,18000
+1+1,40,Brno - Komín,10500
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,55,Brno - Staré Brno,17000
+1+kt,32,Brno - část obce Veveří,7839
+1+1,47,Brno - Veveří,12000
+3+kt,67,Brno - Židenice,18000
+flatshare,30,Brno - Řečkovice,6000
+2+1,65,Brno - Trnitá,9990
+1+kt,20,Brno - Nový Lískovec,8500
+2+1,56,Brno - Horní Heršpice,13000
+1+1,36,Brno - Kohoutovice,9900
+1+1,32,Brno - Kohoutovice,11000
+2+1,65,Brno - Brno-město,15160
+3+kt,66,Brno - Žabovřesky,15000
+3+kt,83,Brno,23000
+2+1,53,Brno - Staré Brno,15000
+2+1,64,Brno - Bystrc,12900
+1+1,38,Brno,9000
+1+kt,33,Brno - Zábrdovice,10500
+1+kt,33,Brno - Líšeň,11000
+2+1,75,Brno - Brno-střed,16900
+2+1,55,Brno - Obřany,13000
+1+kt,28,Brno - Zábrdovice,9990
+3+1,83,Brno,13000
+2+1,70,Brno - Královo Pole,12500
+3+kt,100,Brno - Štýřice,18000
+1+1,45,Brno - Veveří,12500
+unusual,200,Brno - Černá Pole,29900
+1+kt,46,Brno,11400
+1+kt,54,Brno - Brno-město,20000
+3+kt,79,Brno - Horní Heršpice,18900
+4+1,117,Brno - Veveří,25000
+3+kt,94,Brno - Staré Brno,25000
+2+kt,40,Brno,12900
+1+kt,35,Brno,9000
+4+1,130,Brno - Veveří,34000
+3+kt,85,Brno - Pisárky,23000
+3+kt,109,Brno - Brno-město,20900
+2+1,50,Brno,13500
+3+1,68,Brno,4000
+3+kt,113,Brno - Trnitá,21900
+1+kt,41,Brno,13000
+1+kt,30,Brno - Židenice,10000
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,57,Brno,14700
+2+kt,70,Brno - Židenice,15400
+3+1,75,Brno - Brno-město,24000
+1+1,36,Brno - Černá Pole,12000
+3+1,66,Brno - Staré Brno,20000
+1+kt,46,Brno - Zábrdovice,12100
+1+kt,53,Brno - Zábrdovice,12500
+3+1,130,Brno - Brno-město,29900
+2+kt,49,Brno - Medlánky,13900
+3+1,115,Brno - Žabovřesky,16500
+3+kt,70,Brno - Řečkovice,16000
+5+1,102,Brno - Židenice,25000
+1+kt,27,Brno - Trnitá,11000
+1+1,30,Brno - Staré Brno,11500
+2+1,58,Brno - Bystrc,12000
+2+1,56,Brno - Žabovřesky,13000
+3+kt,120,Brno - Veveří,22000
+1+1,40,Brno - Trnitá,10000
+2+kt,55,Brno - Ponava,15000
+2+1,60,Brno - Obřany,12990
+1+kt,28,Brno - Zábrdovice,9990
+3+1,69,Brno - Řečkovice,15000
+1+1,41,Brno - Komín,10490
+2+kt,55,Brno - Bohunice,16500
+2+1,64,Brno - Trnitá,10500
+3+1,70,Brno - Lesná,12900
+2+kt,40,Brno - Žabovřesky,12900
+1+1,42,Brno - Bystrc,10500
+3+kt,90,Brno - Černovice,16000
+2+1,54,Brno - Staré Brno,14500
+2+1,56,Brno - Židenice,10000
+2+1,46,Brno - Zábrdovice,10000
+1+kt,44,Brno - Zábrdovice,9900
+2+kt,40,Brno - Žabovřesky,12900
+2+kt,40,Brno - Žabovřesky,12900
+2+kt,40,Brno - Žabovřesky,12900
+1+kt,18,Brno - Trnitá,7500
+3+kt,74,Brno - Černovice,21000
+1+kt,38,Brno,11500
+2+kt,60,Brno - Královo Pole,21000
+2+1,52,Brno - Židenice,12000
+1+kt,28,Brno - Zábrdovice,9990
+1+1,45,Brno - Zábrdovice,10300
+2+kt,68,Brno - Zábrdovice,14000
+2+1,61,Brno - Černovice,14500
+4+kt,118,Brno - Husovice,20900
+2+kt,44,Brno - Židenice,13500
+1+1,52,Brno - Veveří,12000
+1+1,32,Brno - Ponava,10000
+3+kt,115,Brno,18500
+1+kt,23,Brno - Lesná,8800
+4+1,144,Brno - Zábrdovice,25000
+2+kt,48,Brno - Obřany,11900
+1+kt,36,Brno - Staré Brno,12900
+3+1,77,Brno - Bohunice,16900
+3+kt,77,Brno - Nový Lískovec,16900
+1+kt,34,Brno,11000
+1+kt,42,Brno - Staré Brno,12000
+1+kt,23,Brno - Štýřice,6000
+1+kt,32,Brno - Trnitá,12000
+1+kt,28,Brno - Trnitá,8000
+2+kt,48,Brno - Žabovřesky,13900
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,46,Brno - Královo Pole,15900
+2+1,54,Brno - Židenice,12000
+2+1,50,Brno - Veveří,11000
+2+kt,97,Brno - Brno-střed,36000
+3+kt,81,Brno - Černovice,20000
+2+kt,58,Brno,15000
+3+kt,88,Brno - Královo Pole,24000
+1+1,45,Brno - Žabovřesky,9500
+1+kt,36,Brno - Štýřice,10000
+3+1,70,Brno - Řečkovice,12990
+2+1,55,Brno - Černovice,16000
+1+kt,24,Brno - Lesná,8900
+1+kt,36,Brno - Královo Pole,11900
+1+1,30,Brno - Zábrdovice,10000
+4+kt,75,Brno - Brno-město,29000
+2+kt,58,Brno - Brno-město,22000
+2+kt,48,Brno - Husovice,12000
+4+1,90,Brno - Řečkovice,15000
+1+kt,37,Brno,9500
+2+kt,45,Brno - Veveří,12000
+1+kt,28,Brno - Zábrdovice,9990
+1+kt,21,Brno - Líšeň,11000
+1+1,37,Brno - Kohoutovice,7500
+1+kt,79,Brno - Královo Pole,14000
+2+1,52,Brno,13500
+3+kt,100,Brno,28000
+2+kt,49,Brno - Černá Pole,14900
+3+kt,104,Brno - Trnitá,21000
+2+kt,35,Brno - Královo Pole,10000
+1+kt,28,Brno,12000
+2+1,59,Brno - Staré Brno,12500
+2+1,57,Brno - Kohoutovice,14000
+1+kt,28,Brno - Jundrov,12000
+2+1,64,Brno - Staré Brno,25000
+1+kt,38,Brno,11500
+2+1,65,Brno - Židenice,11500
+3+kt,65,Brno - Nový Lískovec,15900
+4+kt,96,Brno - Bystrc,22000
+2+1,75,Brno - Brno-město,15000
+1+kt,36,Brno,9900
+4+kt,104,Brno,18700
+1+kt,28,Brno - Zábrdovice,9990
+1+kt,40,Brno - Zábrdovice,10500
+1+kt,47,Brno - Veveří,13000
+1+1,35,Brno - Královo Pole,12000
+flatshare,100,Brno - Veveří,10500
+1+kt,42,Brno - Komín,12500
+1+kt,25,Brno,8500
+2+kt,58,Brno - Staré Brno,15400
+3+kt,82,Brno,20000
+2+kt,58,Brno - Brno-město,15000
+2+kt,70,Brno - Židenice,13000
+3+1,77,Brno - Bohunice,13500
+2+1,60,Brno - část obce Veveří,15000
+3+kt,100,Brno - Bystrc,21000
+1+kt,25,Brno,9000
+2+1,45,Brno - Žabovřesky,13000
+3+kt,98,Brno - Ponava,22900
+4+1,90,Brno,20000
+2+kt,55,Brno,12500
+1+kt,34,Brno - Bohunice,11500
+2+kt,55,Brno - Veveří,14700
+1+kt,28,Brno - Zábrdovice,9990
+4+kt,122,Brno - Veveří,45000
+3+1,77,Brno,14600
+2+1,62,Brno - Židenice,17500
+1+1,33,Brno,10000
+1+kt,36,Brno - Královo Pole,12900
+1+kt,48,Brno - Královo Pole,13900
+1+1,42,Brno - Židenice,13500
+1+1,50,Brno - Trnitá,12000
+3+kt,86,Brno - Obřany,15900
+unusual,120,Brno - Veveří,4200
+2+kt,43,Brno - Husovice,13000
+2+1,57,Brno - Veveří,10000
+4+1,115,Brno,23000
+4+kt,115,Brno - Bystrc,23000
+1+kt,30,Brno,10500
+3+1,64,Brno,
+2+kt,46,Brno - Líšeň,13500
+1+kt,48,Brno - Královo Pole,13900
+2+1,71,Brno - Černá Pole,17000
+2+kt,60,Brno,12500
+1+kt,28,Brno - Zábrdovice,9990
+3+kt,108,Brno - Brno-město,29000
+2+kt,40,Brno - Bystrc,17000
+flatshare,160,Brno - Královo Pole,4500
+2+kt,68,Brno,15000
+2+kt,51,Brno,12000
+3+1,80,Brno - Černá Pole,12500
+2+kt,85,Brno - Štýřice,18900
+3+kt,118,Brno - Královo Pole,19000
+2+1,57,Brno - Židenice,15000
+1+kt,35,Brno - Královo Pole,10400
+1+1,42,Brno - Řečkovice,11000
+3+1,76,Brno - Kohoutovice,16000
+1+1,38,Brno - Bystrc,10500
+1+kt,36,Brno,9900
+2+kt,68,Brno - Staré Brno,14000
+1+1,32,Brno - Královo Pole,10500
+1+1,38,Brno - Bystrc,6550
+3+kt,76,Brno - Štýřice,18000
+1+1,44,Brno - Židenice,9500
+1+kt,40,Brno,9400
+1+kt,28,Brno - Zábrdovice,9990
+1+1,40,Brno - Lesná,9200
+3+kt,105,Brno,23000
+1+1,48,Brno - Řečkovice,10000
+2+kt,61,Brno - Žabovřesky,16000
+3+1,80,Brno - Černá Pole,20000
+1+kt,35,Brno,13000
+1+kt,36,Brno - Staré Brno,9900
+1+kt,33,Brno - Zábrdovice,12000
+3+kt,82,Brno - Bystrc,18500
+2+1,45,Brno - Trnitá,13000
+2+kt,50,Brno - Staré Brno,20000
+2+1,59,Brno - Staré Brno,17000
+3+kt,75,Brno - Líšeň,15900
+1+kt,32,Brno - Královo Pole,10900
+1+1,46,Brno - Bystrc,10000
+3+1,110,Brno - Staré Brno,19000
+2+1,54,Brno - Kohoutovice,14000
+2+kt,40,Brno - Brno-Židenice,13500
+2+kt,78,Brno - Pisárky,16900
+3+1,64,Brno,6000
+1+kt,28,Brno - Zábrdovice,9990
+2+1,54,Brno,13800
+2+1,63,Brno - Husovice,15000
+2+kt,47,Brno - Zábrdovice,15000
+3+kt,95,Brno - Brno-město,19500
+2+1,75,Brno - Brno-město,17200
+1+1,44,Brno - Bystrc,11000
+1+kt,31,Brno - Zábrdovice,11000
+2+kt,40,Brno - Bystrc,10000
+2+1,70,Brno - Královo Pole,12900
+2+kt,58,Brno - Černovice,14900
+3+kt,150,Brno - Bystrc,20000
+2+kt,117,Brno,18000
+2+kt,41,Brno - Bystrc,12000
+3+1,80,Brno - Veveří,20000
+1+1,31,Brno - Zábrdovice,9500
+3+kt,106,Brno - Zábrdovice,20000
+1+1,30,Brno - Brno-střed,9500
+2+1,48,Brno - Brno-střed,13000
+2+1,41,Brno - Zábrdovice,12500
+2+kt,54,Brno - Brno-město,20000
+1+kt,28,Brno - Zábrdovice,9990
+2+1,55,Brno - Černovice,16000
+2+1,50,Brno - Obřany,14000
+1+1,38,Brno - Zábrdovice,12000
+2+kt,91,Brno - Ponava,17900
+1+kt,42,Brno - Bystrc,12500
+2+kt,67,Brno,22000
+2+1,41,Brno - Zábrdovice,12500
+2+1,41,Brno - Zábrdovice,12500
+3+1,120,Brno - Brno-město,30000
+4+1,117,Brno - Brno-město,50000
+2+kt,64,Brno - Židenice,12500
+4+1,130,Brno - část obce Veveří,34000
+2+1,78,Brno,24000
+3+1,70,Brno - Štýřice,16500
+3+kt,80,Brno,16000
+3+1,74,Brno - Lesná,19000
+4+1,165,Brno,28000
+2+kt,50,Brno - Štýřice,14000
+3+1,78,Brno - Komín,12401
+1+kt,35,Brno - Bystrc,8300
+1+kt,28,Brno - Zábrdovice,9990
+4+kt,177,Brno - Řečkovice,40000
+1+kt,39,Brno - Bystrc,9500
+2+kt,42,Brno - Zábrdovice,12000
+3+kt,84,Brno - Černá Pole,22000
+flatshare,25,Brno - Ponava,5500
+3+kt,70,Brno - Medlánky,16000
+2+kt,55,Brno - Staré Brno,18000
+2+1,85,Brno - Královo Pole,15380
+1+1,35,Brno - Komín,9000
+2+kt,51,Brno - Černá Pole,14000
+2+kt,58,Brno - Bohunice,16000
+2+kt,54,Brno - Brno-město,25000
+2+kt,54,Brno - Brno-město,20000
+2+kt,63,Brno - Maloměřice,19990
+4+1,160,Brno,28000
+3+1,72,Brno - Bystrc,15000
+3+1,74,Brno - Lesná,15500
+1+kt,33,Brno - Štýřice,10500
+3+kt,73,Brno - Židenice,14000
+2+kt,55,Brno - Trnitá,16500
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,54,Brno - Trnitá,16500
+3+kt,51,Brno - Ponava,14990
+1+kt,30,Brno - Ponava,12490
+1+kt,43,Brno - Bystrc,10900
+1+1,33,Brno - Kohoutovice,11000
+2+kt,48,Brno - Trnitá,15000
+2+kt,52,Brno,11500
+2+kt,52,Brno - Řečkovice,12400
+4+1,160,Brno - Černá Pole,28000
+2+kt,67,Brno - Ivanovice,14000
+2+kt,55,Brno,17500
+unusual,12,Brno - Bystrc,3300
+4+kt,250,Brno,25000
+2+1,65,Brno - Staré Brno,15000
+1+1,35,Brno - Zábrdovice,9500
+3+1,80,Brno,15000
+2+kt,54,Brno - Pisárky,14000
+3+kt,81,Brno,22000
+1+kt,23,Brno - Pisárky,7000
+2+kt,90,Brno - Staré Brno,35000
+1+kt,28,Brno - Zábrdovice,9990
+1+kt,31,Brno - Zábrdovice,9900
+4+1,110,Brno,28000
+2+kt,54,Brno - Staré Brno,26000
+3+kt,108,Brno - Lesná,26900
+3+kt,100,Brno - část obce Veveří,24900
+1+kt,44,Brno - Brno-město,15900
+1+1,32,Brno,8500
+1+1,33,Brno,9000
+2+kt,58,Brno - Brno-město,15000
+2+kt,40,Brno,12500
+3+kt,116,Brno - část obce Veveří,25000
+2+1,80,Brno - Brno-město,16500
+3+1,100,Brno - Trnitá,17300
+2+kt,50,Brno - Černá Pole,13900
+4+1,130,Brno - část obce Veveří,34000
+3+kt,115,Brno - Líšeň,20000
+1+kt,35,Brno,11800
+2+kt,48,Brno - Trnitá,15000
+1+kt,43,Brno,10000
+2+1,85,Brno,15500
+1+kt,28,Brno - Zábrdovice,9990
+2+kt,54,Brno,16200
+2+kt,51,Brno,13000
+2+kt,38,Brno - Pisárky,14900
+2+kt,69,Brno,12000
+2+1,58,Brno - Jundrov,14900
+unusual,55,Brno - Trnitá,12600
+3+1,134,Brno - Brno-město,26998
+3+kt,99,Brno,19900
+2+1,52,Brno,15800
+1+1,33,Brno,11000
+2+kt,76,Brno - Pisárky,14000
+flatshare,20,Brno - Ponava,8000
+3+kt,113,Brno - Trnitá,22000
+5+1,112,Brno,29000
+3+kt,80,Brno - Černá Pole,27900
+3+kt,112,Brno - Veveří,20000
+2+1,45,Brno - Staré Brno,15900
+3+kt,92,Brno - část obce Veveří,20000
+1+kt,29,Brno - Zábrdovice,11750
+3+1,135,Brno - Brno-střed,25000
+1+kt,28,Brno - Zábrdovice,9990
+1+kt,24,Brno - Zábrdovice,11000
+3+1,70,Brno,30000
+2+kt,75,Brno - Pisárky,14000
+flatshare,25,Brno - Líšeň,8000
+1+kt,42,Brno,20580

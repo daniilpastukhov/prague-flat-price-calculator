@@ -5,6 +5,11 @@
 
         <h3>Calculate price</h3>
 
+        <select name="city" id="city" v-model="city">
+            <option value="prague">Prague</option>
+            <option value="brno">Brno</option>
+        </select>
+
         <select id="type" v-model="type">
             <option value="0">- Choose flat type -</option>
             <option v-for="flat_type in flat_types" :value="flat_type.value" :key="flat_type.value">
@@ -17,7 +22,7 @@
 
         <select id="locality" v-model="locality">
             <option value="0">- Choose locality -</option>
-            <option v-for="region in regions" :value="region.value" :key="region.value">
+            <option v-for="region in regions[city]" :value="region.value" :key="region.value">
                 {{ region.text }}
             </option>
         </select>
@@ -56,20 +61,56 @@
                     {text: 'Flatshare', value: 11},
                     {text: 'Unusual', value: 12}
                 ],
-                regions: [
-                    {text: 'Praha', value: 0},
-                    {text: 'Praha 1', value: 1},
-                    {text: 'Praha 2', value: 2},
-                    {text: 'Praha 3', value: 3},
-                    {text: 'Praha 4', value: 4},
-                    {text: 'Praha 5', value: 5},
-                    {text: 'Praha 6', value: 6},
-                    {text: 'Praha 7', value: 7},
-                    {text: 'Praha 8', value: 8},
-                    {text: 'Praha 9', value: 9},
-                    {text: 'Praha 10', value: 10},
-                    {text: 'Praha 11', value: 11}
-                ],
+                regions: {
+                    "prague": [
+                        {text: 'Praha', value: 0},
+                        {text: 'Praha 1', value: 1},
+                        {text: 'Praha 2', value: 2},
+                        {text: 'Praha 3', value: 3},
+                        {text: 'Praha 4', value: 4},
+                        {text: 'Praha 5', value: 5},
+                        {text: 'Praha 6', value: 6},
+                        {text: 'Praha 7', value: 7},
+                        {text: 'Praha 8', value: 8},
+                        {text: 'Praha 9', value: 9},
+                        {text: 'Praha 10', value: 10},
+                        {text: 'Praha 11', value: 11}],
+                    "brno": [
+                        {text: 'Brno - Jundrov', value: 1},
+                        {text: 'Brno - Medlánky', value: 2},
+                        {text: 'Brno - Trnitá', value: 3},
+                        {text: 'Brno - Maloměřice', value: 4},
+                        {text: 'Brno - Žabovřesky', value: 5},
+                        {text: 'Brno - Bohunice', value: 6},
+                        {text: 'Brno - Staré Brno', value: 7},
+                        {text: 'Brno - Černovice', value: 8},
+                        {text: 'Brno - Černá Pole', value: 9},
+                        {text: 'Brno - Kohoutovice', value: 10},
+                        {text: 'Brno - Pisárky', value: 11},
+                        {text: 'Brno - Líšeň', value: 12},
+                        {text: 'Brno - Královo Pole', value: 13},
+                        {text: 'Brno - Bystrc', value: 14},
+                        {text: 'Brno - Komín', value: 15},
+                        {text: 'Brno - Veveří', value: 16},
+                        {text: 'Brno - Židenice', value: 17},
+                        {text: 'Brno - Zábrdovice', value: 18},
+                        {text: 'Brno - Komárov', value: 19},
+                        {text: 'Brno - Obřany', value: 20},
+                        {text: 'Brno - Horní Heršpice', value: 21},
+                        {text: 'Brno - Nový Lískovec', value: 22},
+                        {text: 'Brno - Ponava', value: 23},
+                        {text: 'Brno - Štýřice', value: 24},
+                        {text: 'Brno - Ivanovice', value: 25},
+                        {text: 'Brno - Řečkovice', value: 26},
+                        {text: 'Brno - Husovice', value: 27},
+                        {text: 'Brno - Lesná', value: 28},
+                        {text: 'Brno - část obce Veveří', value: 29},
+                        {text: 'Brno - Brno-Komín', value: 30},
+                        {text: 'Brno - Brno-střed', value: 31},
+                        {text: 'Brno - Brno-město', value: 32},
+                        {text: 'Brno', value: 0}]
+                },
+                city: "prague",
                 type: 0,
                 size: 0,
                 locality: 0,
@@ -83,6 +124,7 @@
                 const api_link = '/predict'
 
                 axios.post(api_link, {
+                    city: this.city,
                     type: this.type,
                     size: this.size,
                     locality: this.locality
