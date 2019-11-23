@@ -1,12 +1,12 @@
 # Flat price calculator
 ## Works for flats located in Prague
 
-Technologies:
+### Technologies
  - Python *(scikit-learn)*
  - Python's Flask *(Backend)*
  - VueJS *(Frontend)*
  - Selenium *(scrapper)*
 
-Run:
+### Usage
  - `pip install -r webapp/requirements.txt`
  - `python3 webapp/run.py`
